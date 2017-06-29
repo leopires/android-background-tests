@@ -4,6 +4,52 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="pireslabs.com.backgroundtests.ui.activities.FragmentManagerActivity">
+    tools:context="pireslabs.com.backgroundtests.ui.activities.FragmentManagerActivity"
+    android:padding="6dp">
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/container_actions"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.509"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.017"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp">
+
+    </android.support.constraint.ConstraintLayout>
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/container_fragment"
+        android:layout_width="0dp"
+        android:layout_height="396dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/container_actions"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp">
+
+        <fragment
+            android:id="@+id/f_loading"
+            android:layout_width="340dp"
+            android:layout_height="380dp"
+            android:name="pireslabs.com.backgroundtests.ui.fragments.LoadingFragment"
+            tools:layout="@layout/fragment_loading"
+            tools:layout_editor_absoluteY="8dp"
+            tools:layout_editor_absoluteX="8dp" />
+
+    </android.support.constraint.ConstraintLayout>
 
 </android.support.constraint.ConstraintLayout>
