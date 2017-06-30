@@ -1,11 +1,10 @@
 package pireslabs.com.backgroundtests.ui.activities;
 
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
 import pireslabs.com.backgroundtests.R;
 
-public class FragmentManagerActivity extends AppCompatActivity {
+public class FragmentManagerActivity extends AbstractBasicAppCompactActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

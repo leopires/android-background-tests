@@ -1,10 +1,10 @@
 <resources>
     <string name="app_name">Background Tests</string>
-    <string name="msg_carregando">Carregando...</string>
+    <string name="msg_carregando">Carregando</string>
     <string name="msg_resultado">Resultado</string>
     <string name="btn_start_count">Start</string>
 
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
-    <string name="message_loading">Loading...</string>
+    <string name="message_loading">Loading</string>
+    <string name="btn_activity_task_execution">Activity Task Execution</string>
+    <string name="btn_fragment_task_execution">Fragment Task Execution</string>
 </resources>
