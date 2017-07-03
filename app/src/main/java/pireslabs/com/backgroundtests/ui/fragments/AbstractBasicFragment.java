@@ -11,7 +11,7 @@ import android.view.ViewGroup;
 import pireslabs.com.backgroundtests.util.Utils;
 
 
-abstract class AbstractBasicFragment extends Fragment {
+public abstract class AbstractBasicFragment extends Fragment {
 
     @Override
     public void onAttach(Context context) {
@@ -80,7 +80,7 @@ abstract class AbstractBasicFragment extends Fragment {
         logMethod("onDetach");
     }
 
-    protected String getMyTag() {
+    public String getMyTag() {
         return Utils.getClassTag(this);
     }
 

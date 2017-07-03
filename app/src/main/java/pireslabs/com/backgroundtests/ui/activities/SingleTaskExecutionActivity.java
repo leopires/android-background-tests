@@ -9,10 +9,9 @@ import android.widget.TextView;
 
 import pireslabs.com.backgroundtests.R;
 import pireslabs.com.backgroundtests.tasks.CounterAsyncTask;
+import pireslabs.com.backgroundtests.util.Utils;
 
 public class SingleTaskExecutionActivity extends AbstractBasicAppCompactActivity {
-
-    private static final int TASK_DURATION = 20;
 
     private ProgressBar prgrssbrLoading;
 
@@ -57,7 +56,7 @@ public class SingleTaskExecutionActivity extends AbstractBasicAppCompactActivity
                 showResult("Incomplete!!!");
             }
         });
-        counterAsyncTask.executeOnExecutor(AsyncTask.THREAD_POOL_EXECUTOR, TASK_DURATION);
+        counterAsyncTask.executeOnExecutor(AsyncTask.THREAD_POOL_EXECUTOR, Utils.Constants.TASK_DURATION_IN_SECONDS);
     }
 
     private void showLoading() {

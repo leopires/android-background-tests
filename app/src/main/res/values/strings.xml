@@ -1,10 +1,9 @@
 <resources>
     <string name="app_name">Background Tests</string>
-    <string name="msg_carregando">Carregando</string>
-    <string name="msg_resultado">Resultado</string>
-    <string name="btn_start_count">Start</string>
-
-    <string name="message_loading">Loading</string>
+    <string name="btn_start_task">Start</string>
+    <string name="msg_loading">Loading</string>
+    <string name="msg_done">Done!</string>
+    <string name="msg_ops">Oops! Something goes wrong!</string>
     <string name="btn_activity_task_execution">Activity Task Execution</string>
     <string name="btn_fragment_task_execution">Fragment Task Execution</string>
 </resources>

@@ -24,6 +24,22 @@
         android:layout_marginStart="8dp"
         android:layout_marginEnd="8dp">
 
+        <Button
+            android:id="@+id/btn_start_task"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="8dp"
+            android:text="@string/btn_start_task"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:textAlignment="center"
+            tools:textSize="12sp" />
+
     </android.support.constraint.ConstraintLayout>
 
     <android.support.constraint.ConstraintLayout
@@ -40,15 +56,6 @@
         app:layout_constraintTop_toBottomOf="@+id/container_actions"
         android:layout_marginStart="8dp"
         android:layout_marginEnd="8dp">
-
-        <fragment
-            android:id="@+id/f_loading"
-            android:layout_width="340dp"
-            android:layout_height="380dp"
-            android:name="pireslabs.com.backgroundtests.ui.fragments.LoadingFragment"
-            tools:layout="@layout/fragment_loading"
-            tools:layout_editor_absoluteY="8dp"
-            tools:layout_editor_absoluteX="8dp" />
 
     </android.support.constraint.ConstraintLayout>
 
