@@ -24,7 +24,7 @@ public class DoneFragment extends AbstractBasicFragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         super.onCreateView(inflater, container, savedInstanceState);
-        // Inflate the layout for this fragment
+        // Inflate the layout for this replaceFragment
         return inflater.inflate(R.layout.fragment_done, container, false);
     }
 

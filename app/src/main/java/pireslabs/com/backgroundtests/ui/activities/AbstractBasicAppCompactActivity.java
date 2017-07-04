@@ -11,6 +11,8 @@ abstract class AbstractBasicAppCompactActivity extends AppCompatActivity {
 
     protected boolean isPaused = false;
 
+    protected AbstractBasicFragment replaceFragment = null;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -27,6 +29,11 @@ abstract class AbstractBasicAppCompactActivity extends AppCompatActivity {
     protected void onResume() {
         super.onResume();
         logMethod("onResume");
+        this.isPaused = false;
+        log("isPaused changed to FALSE");
+        if ((!this.isPaused) && (this.replaceFragment != null)) {
+            replaceFragment(this.replaceFragment);
+        }
     }
 
     @Override
@@ -61,11 +68,13 @@ abstract class AbstractBasicAppCompactActivity extends AppCompatActivity {
 
     protected void replaceFragment(AbstractBasicFragment replaceFragment) {
 
-        if (this.isPaused)
+        if (this.isPaused) {
+            this.replaceFragment = replaceFragment;
             return;
+        }
 
         if (getFragmentContainerId() == 0)
-            throw new IllegalStateException("The fragment container ID isn't specified. Please, override the getFragmentContainerId() method specifying the container ID.");
+            throw new IllegalStateException("The replaceFragment container ID isn't specified. Please, override the getFragmentContainerId() method specifying the container ID.");
         FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction();
         fragmentTransaction.replace(getFragmentContainerId(), replaceFragment, replaceFragment.getMyTag());
         fragmentTransaction.commit();
